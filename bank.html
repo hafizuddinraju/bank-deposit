@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="text-center mt-6">
+        <h1 class="text-5xl font-semibold"><span class="text-5xl font-bold text-cyan-600">DashBoard</span></h1>
+
+    </header>
+    <main>
+        <section class="mt-12 ">
+            <div class="grid grid-cols-3 w-9/12 mx-auto gap-4  ">
+                <div class="bg-lime-400 p-8 rounded-xl text-white text-4xl">
+                    <h4>Deposit</h4>
+                    <h4>$<span id="deposit-show">00</span></h4>
+                </div>
+                <div class="bg-sky-400 p-8 rounded-xl text-white text-4xl">
+                    <h4>Withdraw</h4>
+                    <h4>$<span id="withdraw-show">00</span></h4>
+                </div>
+                <div class="bg-green-400 p-8 rounded-xl text-white text-4xl">
+                    <h4>Balance</h4>
+                    <h4>$<span id="balance-show">200</span></h4>
+                </div>
+                
+                
+                
+              </div>
+        </section>
+        <section class="mt-12 ">
+            <div class="grid grid-cols-2 w-9/12 mx-auto gap-4  ">
+                <div class="bg-violet-300 p-8 rounded-xl">
+                    
+                    <input id="input-deposit" class="block w-9/12 mx-auto px-3 rounded text-sm" type="text" placeholder="Enter your deposit">
+                    <button id="btn-deposit" class="w-3/6 hover:bg-sky-700 mx-auto text-white bg-sky-600 block mt-4 py-1 font-semibold  rounded-xl text-2xl">Deposit</button>
+                </div>
+                
+                <div class="bg-lime-300 p-8 rounded-xl ">
+                    <input id="input-withdraw" class="block w-9/12 mx-auto px-3 rounded text-sm" type="text" placeholder="Enter your Withdraw">
+                    <button id="btn-withdraw" class="w-3/6 hover:bg-green-700 mx-auto bg-green-600 block mt-4 py-1 font-semibold text-white rounded-xl text-2xl">Withdraw</button>
+                </div>
+                
+                
+                
+              </div>
+        </section>
+    </main>
+    
+    <script src="js/utilies.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>

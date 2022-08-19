@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       
+
+    </style>
+</head>
+<body>
+    <header class="text-center mt-6">
+        <h1 class="text-5xl font-semibold">Welcome to my <span class="text-5xl font-bold text-cyan-600">RGB Bank</span></h1>
+
+    </header>
+    <main>
+        <section class="login bg-sky-100 w-9/12 mx-auto my-6 p-10">
+            <h4 class="text-3xl font-semibold mb-4 text-center">Please Login</h4>
+            <input id="input"  class="w-9/12 block mb-4 px-3 mx-auto" type="email" placeholder="Enter your mail">
+            <input id="password" class="w-9/12 block mb-4 px-3 mx-auto" type="password" placeholder="Enter your password">
+            <button id="btn-login" class="bg-sky-400 w-3/6 block mb-4 px-3 py-2 mx-auto text-2xl rounded font-semibold ">Login</button>
+        </section>
+
+
+    </main>
+    <script>
+        document.getElementById('btn-login').addEventListener('click',function(){
+            const inputText = document.getElementById('input');
+            const inputValue = inputText.value;
+            const passwordP = document.getElementById('password');
+            const passwordValue = passwordP.value;
+            if(inputValue === 'raju@gmail.com' && passwordValue === 'raju'){
+                window.location.href ="bank.html";
+            }
+           
+
+        })
+
+    </script>
+</body>
+</html>
